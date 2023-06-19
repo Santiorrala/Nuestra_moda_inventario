@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Nuestra Moda Inventario</string>
+    <string-array name="tipo_productos">
+        <item>Zapato</item>
+        <item>Pantalon</item>
+        <item>Camiseta</item>
+        <item>Accesorio</item>
+    </string-array>
+</resources>

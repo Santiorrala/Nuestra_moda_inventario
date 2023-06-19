@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Listar_factura"
+    android:background="#E9FCED">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="417dp"
+            android:layout_height="58dp"
+            android:background="#76C1AE"
+            android:gravity="center_horizontal"
+            android:text="Facturas"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:titleTextColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextIdFactura"
+                android:layout_width="232dp"
+                android:layout_height="57dp"
+                android:gravity="center_vertical"
+                android:hint="Ingrese el ID de la factura"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textColorLink="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#E9FCED"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGenerarPDF"
+                android:layout_width="179dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#76C1AE"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Generar PDF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="686dp"
+            android:backgroundTint="#76C1AE"
+            android:cacheColorHint="#AE1616"
+            android:divider="#76C1AE"
+            android:dividerHeight="1.0sp"
+            android:textAppearance="?attr/textAppearanceListItem" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
